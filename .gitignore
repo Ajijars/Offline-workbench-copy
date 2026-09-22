@@ -1,0 +1,32 @@
+# ─────────────────────────────────────────────────────
+# .gitignore for Offline Workbench Client
+# ─────────────────────────────────────────────────────
+
+# Environment files (contain server IP — don't commit)
+client/config/.env.client
+client/frontend/.env.local
+
+# CA Certificate (sensitive — distribute via USB/internal only)
+client/certs/ca.crt
+client/certs/*.pem
+client/certs/*.key
+
+# Node modules
+client/frontend/node_modules/
+client/frontend/.next/
+client/frontend/out/
+
+# Build artifacts
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
